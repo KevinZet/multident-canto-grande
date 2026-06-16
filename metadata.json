@@ -1,0 +1,6 @@
+{
+  "name": "Multident Canto Grande",
+  "description": "Plataforma web con Landing Page optimizada y CRM de gestión de leads y citas para la clínica dental Multident de Canto Grande.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
