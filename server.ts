@@ -443,7 +443,7 @@ app.post('/api/login', (req: Request, res: Response) => {
         username: 'admin',
         role: 'Administrador Sede',
         name: 'Dr. Marco Aurelio (Multident SJL)',
-        avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=200'
+        avatarUrl: '/images/admin-avatar.jpg'
       },
       token: 'demo-jwt-token-multident-sjl'
     });

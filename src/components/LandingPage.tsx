@@ -31,6 +31,17 @@ import {
 import { TREATMENTS } from '../data/treatments';
 import { Lead } from '../types';
 import clinicLogo from '../assets/images/clinic_logo_1781594340090.jpg';
+import patientAvatar1 from '../assets/images/patient-avatar-1.jpg';
+import patientAvatar2 from '../assets/images/patient-avatar-2.jpg';
+import patientAvatar3 from '../assets/images/patient-avatar-3.jpg';
+import drMarco from '../assets/images/dr-marco.jpg';
+import draAngela from '../assets/images/dra-angela.jpg';
+import drRoberto from '../assets/images/dr-roberto.jpg';
+import draJimena from '../assets/images/dra-jimena.jpg';
+import consultorio from '../assets/images/consultorio.jpg';
+import sillaDiagnostico from '../assets/images/silla-diagnostico.jpg';
+import esterilizacion from '../assets/images/esterilizacion.jpg';
+import recepcion from '../assets/images/recepcion.jpg';
 
 interface LandingPageProps {
   onAdminClick: () => void;
@@ -488,9 +499,9 @@ export default function LandingPage({ onAdminClick, onNewLeadRegistered }: Landi
                   {/* Active patient feedback */}
                   <div className="flex gap-3 items-center pt-2">
                     <div className="flex -space-x-2 overflow-hidden">
-                      <img className="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Paciente" />
-                      <img className="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Paciente" />
-                      <img className="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Paciente" />
+                      <img className="inline-block h-8 w-8 rounded-full ring-2 ring-white" src={patientAvatar1} alt="Paciente" />
+                      <img className="inline-block h-8 w-8 rounded-full ring-2 ring-white" src={patientAvatar2} alt="Paciente" />
+                      <img className="inline-block h-8 w-8 rounded-full ring-2 ring-white" src={patientAvatar3} alt="Paciente" />
                     </div>
                     <p className="text-xs text-slate-500">
                       Más de <strong className="text-slate-800">1,500 familias de SJL</strong> confían en nosotros.
@@ -743,7 +754,7 @@ export default function LandingPage({ onAdminClick, onNewLeadRegistered }: Landi
               <div className="h-64 bg-slate-100 relative overflow-hidden flex items-end justify-center">
                 <img 
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400" 
+                  src={drMarco} 
                   alt="Dr. Marco Aurelio Valdivia" 
                 />
                 <div className="absolute top-3 right-3 bg-sky-600 text-white text-[9px] font-bold font-mono px-2 py-0.5 rounded">
@@ -770,8 +781,8 @@ export default function LandingPage({ onAdminClick, onNewLeadRegistered }: Landi
               <div className="h-64 bg-slate-100 relative overflow-hidden flex items-end justify-center">
                 <img 
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1594824813573-246434e3b96f?auto=format&fit=crop&q=80&w=400" 
-                  alt="Dra. Angela Angela Castro" 
+                  src={draAngela} 
+                  alt="Dra. Angela Castro" 
                 />
                 <div className="absolute top-3 right-3 bg-[#0c2454] text-white text-[9px] font-bold font-mono px-2 py-0.5 rounded">
                   Especialista
@@ -797,8 +808,8 @@ export default function LandingPage({ onAdminClick, onNewLeadRegistered }: Landi
               <div className="h-64 bg-slate-100 relative overflow-hidden flex items-end justify-center">
                 <img 
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400" 
-                  alt="Dr. Roberto Luis Ramírez" 
+                  src={drRoberto} 
+                  alt="Dr. Roberto Ramirez" 
                 />
                 <div className="absolute top-3 right-3 bg-[#0c2454] text-white text-[9px] font-bold font-mono px-2 py-0.5 rounded">
                   Especialista
@@ -824,7 +835,7 @@ export default function LandingPage({ onAdminClick, onNewLeadRegistered }: Landi
               <div className="h-64 bg-slate-100 relative overflow-hidden flex items-end justify-center">
                 <img 
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400" 
+                  src={draJimena} 
                   alt="Dra. Jimena Rosales" 
                 />
                 <div className="absolute top-3 right-3 bg-[#0c2454] text-white text-[9px] font-bold font-mono px-2 py-0.5 rounded">
@@ -946,28 +957,28 @@ export default function LandingPage({ onAdminClick, onNewLeadRegistered }: Landi
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             
             <div className="aspect-video relative rounded-xl overflow-hidden border border-slate-200 shadow-xs group">
-              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=400" alt="Consultorio Premium" />
+              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src={consultorio} alt="Consultorio Premium" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                 <span className="text-white text-[10px] font-bold">Consultorios Clínicos</span>
               </div>
             </div>
 
             <div className="aspect-video relative rounded-xl overflow-hidden border border-slate-200 shadow-xs group">
-              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://images.unsplash.com/photo-1516549618134-47ad7e75a3ea?auto=format&fit=crop&q=80&w=400" alt="Silla de diagnóstico" />
+              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src={sillaDiagnostico} alt="Silla de diagnostico" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                 <span className="text-white text-[10px] font-bold">Unidades Odontológicas Ergonomicas</span>
               </div>
             </div>
 
             <div className="aspect-video relative rounded-xl overflow-hidden border border-slate-200 shadow-xs group">
-              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://images.unsplash.com/photo-1579684389782-64d84b5e9053?auto=format&fit=crop&q=80&w=400" alt="Esterilización" />
+              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src={esterilizacion} alt="Esterilizacion" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                 <span className="text-white text-[10px] font-bold">Zona de Autoclaves y Esterilización</span>
               </div>
             </div>
 
             <div className="aspect-video relative rounded-xl overflow-hidden border border-slate-200 shadow-xs group">
-              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=400" alt="Recepción" />
+              <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" src={recepcion} alt="Recepcion" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                 <span className="text-white text-[10px] font-bold">Recepcion Sede Pet Friendly</span>
               </div>
